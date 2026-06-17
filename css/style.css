@@ -30,6 +30,14 @@ box-sizing:border-box;
 
 body{
 
+background:
+radial-gradient(
+circle at top,
+rgba(120,120,120,.08),
+transparent 50%
+),
+var(--bg);
+
 font-family:'Inter',sans-serif;
 background:var(--bg);
 color:var(--text);
@@ -309,5 +317,20 @@ repeat(auto-fit,minmax(300px,1fr));
 
 gap:24px;
 
+}
+
+.profile{
+
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.12);
 
 }
